@@ -32,7 +32,7 @@
 
 <h2>🧑🏻‍ Autor</h2>
 <p>Feito por João paulo</p>
-<a href="https:https://www.linkedin.com/in/jo%C3%A3o-paulo-ferreira-neto-467880182/">
+<a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-ferreira-neto-467880182/">
 	<img src="https://img.shields.io/badge/-João-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https:https://www.linkedin.com/in/jo%C3%A3o-paulo-ferreira-neto-467880182/">
 </a>	
 <a href="mailto:joaopauloneto3687@gmail.com">
