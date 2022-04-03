@@ -12,7 +12,7 @@
 	<li>Clone esse repositório(git clone)</li>
  	<li>Instale as dependências(npm install)</li>
 	<li>Execute a aplicação em modo de desenvolvimento(npm run serve)</li>
- 	<li>Acesse http://localhost:8080 </li>
+ 	<li>Acesse http://localhost:8080 (Caso não haja nenhum serviço utilizando essa porta) </li>
 </ul>
 
 <h2>🤖 Tecnologias Utilizadas</h2>
@@ -32,7 +32,7 @@
 
 <h2>🧑🏻‍ Autor</h2>
 <p>Feito por João paulo</p>
-<a href="https:https://www.linkedin.com/in/jo%C3%A3o-paulo-ferreira-neto-467880182/">
+<a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-ferreira-neto-467880182/">
 	<img src="https://img.shields.io/badge/-João-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https:https://www.linkedin.com/in/jo%C3%A3o-paulo-ferreira-neto-467880182/">
 </a>	
 <a href="mailto:joaopauloneto3687@gmail.com">
