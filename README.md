@@ -26,16 +26,16 @@
 </div>
 
 <h2>🖼️ Demonstração da aplicação</h2>
-<img margin-bottom="20px" src="src/assets/readme.PNG"">
+<img margin-bottom="30px" src="src/assets/readme.PNG"">
 <img margin-bottom="20px" src="src/assets/readme2.PNG"">
 <h4  style="display: inline_block">Visualização do site :</h4><a style="display: inline_block" target="blank" href="https://desafio-cards.netlify.app/">Preview no Netlify</a>
 
 <h2>🧑🏻‍ Autor</h2>
 <p>Feito por João paulo</p>
-<a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-ferreira-neto-467880182/">
+<a target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-paulo-ferreira-neto-467880182/">
 	<img src="https://img.shields.io/badge/-João-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https:https://www.linkedin.com/in/jo%C3%A3o-paulo-ferreira-neto-467880182/">
 </a>	
 
-<a href="mailto:joaopauloneto3687@gmail.com">
+<a target="_blank" href="mailto:joaopauloneto3687@gmail.com">
 	<img src="https://img.shields.io/badge/-joaopauloneto3687@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:joaopauloneto3687@gmail.com">
 </a>
