@@ -5,12 +5,12 @@
       <ul>
         <li>
           <a target="_blank" href="https://github.com/joao5142">
-            <img src="../assets/github-brands.svg" alt="" />
+            <img src="../assets/github-brands.svg" />
           </a>
         </li>
         <li>
           <a target="_blank" href="https://www.instagram.com/joao_paulo.png/">
-            <img src="../assets/instagram-brands.svg" alt="" />
+            <img src="../assets/instagram-brands.svg" />
           </a>
         </li>
 

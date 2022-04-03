@@ -4,16 +4,16 @@
       <div class="mvc-card">
         <div class="mvc-card-head">
           <div class="icon enem">
-            <img src="../assets/logo-enem.svg" alt="" />
+            <img src="../assets/logo-enem.svg" />
           </div>
           <div>
             <h6 class="mvc-card-title">Revisa Enem</h6>
-            <a class="mvc-card-social-link" href="">@revisaenemoficial</a>
+            <a class="mvc-card-social-link" href="#">@revisaenemoficial</a>
           </div>
           <button class="btn-follow">Seguir</button>
 
           <button class="icon close">
-            <img src="../assets/icon-close.svg" alt="" />
+            <img src="../assets/icon-close.svg" />
           </button>
         </div>
 

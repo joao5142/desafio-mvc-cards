@@ -2,7 +2,7 @@
   <div class="mvc-card-carrossel">
     <div class="carrossel-content">
       <div v-on:click="prev" class="arrow-left icon">
-        <img src="../assets/arrow-left.svg" alt="" />
+        <img src="../assets/arrow-left.svg" />
       </div>
 
       <div class="carrossel-images">
@@ -10,7 +10,7 @@
       </div>
 
       <div v-on:click="next" class="arrow-right icon">
-        <img src="../assets/arrow-right.svg" alt="" />
+        <img src="../assets/arrow-right.svg" />
       </div>
     </div>
     <div class="carrossel-bottom">

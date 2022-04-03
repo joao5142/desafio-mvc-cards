@@ -1,11 +1,11 @@
 <template>
   <div class="mvc-card-social">
     <div class="icon" v-bind:class="imageColor">
-      <img @error="setAltImg" v-bind:src="getImgUrl()" alt="" />
+      <img v-bind:src="getImgUrl()" alt="" />
     </div>
     <div>
       <h6 class="mvc-card-title" v-bind:class="textColor">@Revisa Enem</h6>
-      <a class="mvc-card-social-link" href="">Clique aqui</a>
+      <a class="mvc-card-social-link" href="#">Clique aqui</a>
     </div>
   </div>
 </template>
@@ -24,10 +24,6 @@ export default {
       let images = require.context("../assets/", false, /\.svg$/);
       return images("./" + this.image + ".svg");
     },
-  },
-  mounted() {
-    console.log(this.textColor);
-    console.log(this.image);
   },
 };
 </script>

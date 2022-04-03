@@ -44,7 +44,7 @@ export default {
 
 <style scoped >
 header {
-  padding: 30px 20px;
+  padding: 20px 20px;
 }
 nav {
   display: flex;
