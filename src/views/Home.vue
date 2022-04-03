@@ -19,7 +19,9 @@
           </div>
         </div>
 
-        <div class="col-xl-6 d-flex flex-column align-items-center">
+        <div
+          class="mt-4 mt-md-0 col-xl-6 d-flex flex-column align-items-center"
+        >
           <p>Card 2</p>
           <div class="d-flex">
             <router-link to="/card2">
