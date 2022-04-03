@@ -4,9 +4,9 @@
 <h2>🚧 Status do projeto</h2>
 <p>Concluído</p>
 
-<h2>🖥️ Pré-requisitos e como rodar a aplicação/testes</h2>
+<h2>🖥️ Pré-requisitos e como rodar a aplicação</h2>
 <p>Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Vue.js](https://vuejs.org/). </p>
+[Git](https://git-scm.com), [NodeJs](https://nodejs.org/en/). </p>
 <h3>Rodando a Aplicação</h3>
 <ul>
 	<li>Clone esse repositório(git clone)</li>
@@ -14,6 +14,10 @@
 	<li>Execute a aplicação em modo de desenvolvimento(npm run serve)</li>
  	<li>Acesse http://localhost:8080 (Caso não haja nenhum serviço utilizando essa porta) </li>
 </ul>
+
+<h2>💻 Ambiente de Desenvolvimento utilizado</h2>
+<p>Foi utilizado o [Visual Studio Code](https://code.visualstudio.com/) para desenvolvimento</p>
+
 
 <h2>🤖 Tecnologias Utilizadas</h2>
 <div style="display: inline_block">
@@ -24,6 +28,7 @@
   <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
   <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white">
 </div>
+
 
 <h2>🖼️ Demonstração da aplicação</h2>
 <img margin-bottom="30px" src="src/assets/readme.PNG"">
