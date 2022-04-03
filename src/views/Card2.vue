@@ -3,6 +3,7 @@
     <div class="mvc-card">
       <div class="mvc-card-head">
         <p class="mvc-card-title">Redes sociais</p>
+        <img src="../assets/logo-instagram.svg" />
         <img src="../assets/logo-youtube-small.svg" />
       </div>
       <div class="mvc-card-text">
@@ -42,7 +43,7 @@ export default {
 .mvc-card-head {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
   margin-bottom: 10px;
 }
 .mvc-card-head > * {
