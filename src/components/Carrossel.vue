@@ -14,9 +14,12 @@
       </div>
     </div>
     <div class="carrossel-bottom">
-      <div class="carrossel-item"></div>
-      <div class="carrossel-item selected"></div>
-      <div class="carrossel-item"></div>
+      <div
+        v-for="(item, index) in images"
+        class="carrossel-item"
+        v-bind:class="{ selected: index == currentIndex }"
+        v-bind:key="index"
+      ></div>
     </div>
   </div>
 </template>
@@ -28,39 +31,49 @@ export default {
   data() {
     return {
       images: ["carrossel-image1", "carrossel-image2", "carrossel-image3"],
-      currentIndex: 0,
+      currentIndex: 1,
     };
   },
   methods: {
     next(event) {
-      for (let i = 0; i < this.images.length - 1; i++) {
-        // console.log(this.images[i]);
-        // let aux = this.images[i];
-        // if (this.currentIndex == i) {
-        //   this.images[i] = this.images[i + 1];
-        //   this.images[i + 1] = aux;
-        // }
-      }
-
-      console.log(this.currentIndex);
+      //currentIndex para saber qual imagem esta no centro do slide
+      let arrLength = this.images.length - 1;
       this.currentIndex += 1;
-      if (this.currentIndex > this.images.length - 1) {
+
+      if (this.currentIndex > arrLength) {
         this.currentIndex = 0;
       }
+
+      this.createNewArrayImages("next", arrLength);
     },
     prev(event) {
-      for (let i = 0; i < this.images.length - 1; i++) {
-        // console.log(this.images[i]);
-      }
-      console.log(this.currentIndex);
+      //currentIndex para saber qual imagem esta no centro do slide
+      let arrLength = this.images.length - 1;
       this.currentIndex -= 1;
+
       if (this.currentIndex < 0) {
-        this.currentIndex = this.images.length - 1;
+        this.currentIndex = arrLength;
       }
+      this.createNewArrayImages("prev", arrLength);
+    },
+    createNewArrayImages(funcName, arrLength) {
+      let arrAux = [];
+      for (let i = 0; i <= arrLength; i++) {
+        if (i == 0) {
+          arrAux[i] =
+            funcName == "prev" ? this.images[1] : this.images[arrLength];
+        } else if (i == 1) {
+          arrAux[i] =
+            funcName == "prev" ? this.images[arrLength] : this.images[0];
+        } else {
+          arrAux[i] = funcName == "prev" ? this.images[0] : this.images[1];
+        }
+      }
+      this.images = arrAux; //setando um novo array de imagens para o state images
     },
     getImgUrl(url) {
-      let images = require.context("../assets/", false, /\.svg$/);
-      return images("./" + url + ".svg");
+      let image = require.context("../assets/", false, /\.svg$/);
+      return image("./" + url + ".svg");
     },
   },
 };
@@ -78,18 +91,38 @@ export default {
   position: absolute;
   max-width: 260px;
   max-height: 245px;
+  animation: slider 0.1s linear;
+  border-radius: 15px;
+  object-fit: cover;
 }
+
+@keyframes slider {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 .carrossel-images :nth-child(1) {
   left: 0px;
+  transition-delay: 50ms;
 }
 
 .carrossel-images :nth-child(2) {
   transform: translateX(-50%);
   left: 50%;
   z-index: 2;
+  min-width: 250px;
+  transition-delay: 10ms;
+  box-shadow: -4px 1px 15px rgba(0, 0, 0, 0.6);
+  object-position: center;
 }
+
 .carrossel-images :nth-child(3) {
   right: 0px;
+  transition-delay: 50ms;
 }
 .mvc-card-carrossel {
   position: relative;
